@@ -34,3 +34,12 @@ body,
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.menu1 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #165a72;
+}

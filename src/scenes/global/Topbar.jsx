@@ -1,6 +1,6 @@
 import { IconButton, useTheme } from "@mui/material";
-import { useContext } from "react";
-import { ColorModeContext } from "../../theme";
+
+
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
@@ -11,7 +11,7 @@ import { IconBox, SearchBox, StyledInputBase, TopbarBox } from "./style";
 
 const Topbar = () => {
   const theme = useTheme();
-  const colorMode = useContext(ColorModeContext);
+  // const colorMode = useContext(ColorModeContext);
 
   return (
     <TopbarBox>
@@ -22,8 +22,8 @@ const Topbar = () => {
         </IconButton>
       </SearchBox>
       <IconBox>
-        <IconBox onClick={colorMode.toggleColorMode}>
-          {theme.palette.mode === "dark" ? (
+        <IconBox >
+          {theme.palette.mode === "DARK" ? (
             <LightModeOutlinedIcon />
           ) : (
             <DarkModeOutlinedIcon />
